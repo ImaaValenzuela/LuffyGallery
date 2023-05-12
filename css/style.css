@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/onepiecefont.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+  font-family: 'Open Sans', monospace;
+  color: #403530;
+  font-size: 18px;
+  padding: 1em;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 5vw;
+  background-color:#e5d3bf;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #e5d3bf;
+  background-color: #403530;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.photos {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+img {
+  max-width: 281px;
+  height: auto;
+}
+
+footer {
+  font-size: 0.75em;
+  margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+  .photos {
+    flex-direction: column;
+  }
+}
